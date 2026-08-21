@@ -1,293 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./chatbot/chatbot.css" />
+    <title>PORTFOLIO</title>
+  </head>
 
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="./style.css">
-     <title>PORTFOLIO</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="title-section">
+        <h2><a href="#">PERSONAL PORTFOLIO</a></h2>
+      </div>
+      <nav class="nav-container">
+        <div class="ul-section">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILLS</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </div>
+      </nav>
 
-<body>
-     <header class="header">
-          <div class="title-section">
-               <h2><a href="#">PERSONAL PORTFOLIO</a></h2>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="main-container" id="home">
+      
+      <div class="image-section">
+        <img src="./src/Pavalan_Photo_2.png" alt="Portfolio-Image" />
+      </div>
+
+      <div class="about-section">
+        <h1>Hi, I'm Pavalan Ganesan</h1>
+        <h1>Computer Science Student <br /><span id="auto-type" style="font-size: 2rem;"></span></h1>
+        <p>
+          I am a passionate Computer Science student focused on building
+          scalable web applications and backend systems. I enjoy turning ideas
+          into real-world solutions using modern technologies
+        </p>
+
+        <div class="button-section">
+          <button><a href="./src/Pavalan_G_Resume.pdf">DOWNLOAD CV</a></button>
+          <button><a href="#contact">CONTACT US</a></button>
+        </div>
+      </div>
+    </main>
+
+    <main class="about-container" id="about">
+      <div class="about-section-container">
+        <h1>I'm a Developer.</h1>
+        <p>Currently. I'm a Student of CSE at <a href="#">GCES</a></p>
+      </div>
+
+      <div class="about-section-container">
+        <h3>
+          I am Pavalan G, A BE Computer Science and Engineering Student under
+          Anna University. I have a strong interest in backend development and
+          full-stack web technology. I enjoy solving problems, building
+          real-time applications, and continuously. My goals is to become a
+          skilled software developer and work on impactful real-world projects.
+        </h3>
+      </div>
+
+      <div class="about-section-container">
+        <h4>Education :</h4>
+        <ul class="ul-container">
+          <li>BE - Computer Science and Engineering</li>
+          <li>Anna University</li>
+          <li>Current CGPA : 7.78</li>
+        </ul>
+      </div>
+    </main>
+
+    <main class="skill-container" id="skill">
+      <div class="header-section">
+        <h1>SKILL</h1>
+      </div>
+
+      <div class="work-experience-section">
+        <div class="work-experience">
+          <h2><i class="fa-brands fa-html5"></i> HTML 5</h2>
+          <div class="progress-line" data-percent="95%">
+            <span style="width: 0%"></span>
           </div>
-          <nav class="nav-container">
-               <div class="ul-section">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skill">SKILLS</a></li>
-                    <li><a href="#project">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-               </div>
-          </nav>
+        </div>
 
-          <div class="menu-toggle" id="menu-toggle">
-               <i class="fa-solid fa-bars"></i>
+        <div class="work-experience">
+          <h2><i class="fa-brands fa-css3-alt"></i> CSS 3</h2>
+          <div class="progress-line" data-percent="87%">
+            <span style="width: 0%"></span>
           </div>
-     </header>
+        </div>
 
-     <main class="main-container" id="home">
-          <div class="image-section">
-               <img src="https://picsum.photos/800/600" alt="Portfolio-Image">
+        <div class="work-experience">
+          <h2><i class="fa-brands fa-js"></i> JAVASCRIPT</h2>
+          <div class="progress-line" data-percent="75%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
 
-          <div class="about-section">
-               <!-- <h3>A Designer who</h3> -->
-               <h1>Hi, I'm Pavalan</h1>
-               <h1>Computer Science Student <br><span id="auto-type"></span></h1>
-               <p>I am a passionate Computer Science student focused on building scalable web applications and backend
-                    systems. I enjoy turning ideas into real-world solutions using modern technologies</p>
-
-               <div class="button-section">
-                    <button>DOWNLOAD CV</button>
-                    <button>CONTACT ME</button>
-               </div>
+        <div class="work-experience">
+          <h2><i class="fab fa-node"></i> NODE JS</h2>
+          <div class="progress-line" data-percent="50%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
 
-     </main>
-
-     <main class="about-container" id="about">
-          <div class="about-section-container">
-               <h1>I'm a Software Engineer.</h1>
-               <p>Currently. I'm a Software Engineering at <a href="#">Facebook</a></p>
+        <div class="work-experience">
+          <h2>ex EXPRESS JS</h2>
+          <div class="progress-line" data-percent="45%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
 
-          <div class="about-section-container">
-               <h3>I am Pavalan G, A BE Computer Science and Engineering Student under Anna University. I have a strong
-                    interest in backend development and full-stack web technology. I enjoy solving problems, building
-                    real-time applications, and continuously. My goals is to become a skilled software developer and
-                    work on impactful real-world projects.</h3>
+        <div class="work-experience">
+          <h2><i class="fa-solid fa-database"></i> MYSQL</h2>
+          <div class="progress-line" data-percent="35%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
 
-          <div class="about-section-container">
-               <h4>Education : </h4>
-               <ul class="ul-container">
-                    <li>BE - Computer Science and Engineering</li>
-                    <li>Anna University</li>
-                    <li>Current CGPA : 7.78</li>
-               </ul>
+        <div class="work-experience">
+          <h2><i class="fa-solid fa-database"></i> MONGO DB</h2>
+          <div class="progress-line" data-percent="30%">
+            <span style="width: 0%"></span>
           </div>
-     </main>
+        </div>
 
-     <main class="skill-container" id="skill">
-          <div class="header-section">
-               <h1>SKILL</h1>
+        <div class="work-experience">
+          <h2><i class="fa-brands fa-python"></i> PYTHON</h2>
+          <div class="progress-line" data-percent="40%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
 
-          <div class="work-experience-section">
-               <div class="work-experience">
-                    <h2><i class="fa-brands fa-html5"></i> HTML 5</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-brands fa-css3-alt"></i> CSS 3</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-brands fa-js"></i> JAVASCRIPT</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fab fa-node"></i> NODE JS</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2>ex EXPRESS JS</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-solid fa-database"></i> MYSQL</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-solid fa-database"></i> MONGO DB</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-brands fa-python"></i> PYTHON</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-brands fa-github" style="color: #fff;"></i> GITHUB</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
-
-               <div class="work-experience">
-                    <h2><i class="fa-solid fa-code"></i> VS CODE</h2>
-                    <div class="progress-line" data-percent="75%">
-                         <span style="width: 0%;"></span>
-                    </div>
-               </div>
+        <div class="work-experience">
+          <h2>
+            <i class="fa-brands fa-github" style="color: #fff"></i> GITHUB
+          </h2>
+          <div class="progress-line" data-percent="55%">
+            <span style="width: 0%"></span>
           </div>
-     </main>
+        </div>
 
-     <main class="project-container" id="project">
-          <div class="project-header">
-               <h1>PROJECTS</h1>
+        <div class="work-experience">
+          <h2><i class="fa-solid fa-code"></i> VS CODE</h2>
+          <div class="progress-line" data-percent="75%">
+            <span style="width: 0%"></span>
           </div>
+        </div>
+      </div>
+    </main>
 
-          <div class="project-grid-section">
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
+    <main class="project-container" id="project">
+      <div class="project-header">
+        <h1>PROJECTS</h1>
+      </div>
 
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
+      <div class="project-grid-section">
+        <div class="project-section">
+          <h2>Fi-Pi Tracker</h2>
+          <h4>
+            Tracking the daily life financial expenses based on user income.
+          </h4>
+          <h4>Technologies Used:</h4>
+          <h4>
+            React JS, MongoDB, Express JS, Node JS, TailwindCSS, Clerk User
+            Authentication
+          </h4>
 
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
-
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
-               <div class="project-section">
-                    <h2>Hotel Reservation System</h2>
-                    <h4>A web-based application designed to manage hotel room bookings, customer details, and
-                         availability
-                         efficiently.</h4>
-                    <h4>Technologies Used:</h4>
-                    <h4>HTML, CSS, JavaScript, Node.js, MySQL</h4>
-                    <div class="button-section">
-                         <button>DEMO LINK</button>
-                         <button>GITHUB LINK</button>
-                    </div>
-               </div>
+          <div class="button-section">
+            <button>
+              <a href="https://fi-pi-tracker-system.onrender.com/">DEMO LINK</a>
+            </button>
+            <button>
+              <a
+                href="https://github.com/Pavalanganesan2368/Fi-Pi-Tracker-System.git"
+                >GITHUB LINK</a
+              >
+            </button>
           </div>
-     </main>
+        </div>
+        <div class="project-section">
+          <h2>Blog-Day Application</h2>
+          <h4>
+            User can post the daily life activities to view all over the world.
+          </h4>
+          <h4>Technologies Used:</h4>
+          <h4>React JS, MongoDB, Express JS, Node JS, TailwindCSS</h4>
 
-     <main class="contact-container" id="contact">
-          <div class="form-header">
-               <h1>CONTACT</h1>
+          <div class="button-section">
+            <button>
+              <a href="https://mern-blog-day-application.onrender.com/"
+                >DEMO LINK</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/Pavalanganesan2368/MERN-Blog-Day-Application.git"
+                >GITHUB LINK</a
+              >
+            </button>
           </div>
-          <div class="contact-section">
-               <div class="contact-details">
-                    <p><i class="fa-solid fa-envelope" style="color: #fff;"></i> pavalanganesan2368@gmail.com</p>
-                    <p><i class="fa-solid fa-phone" style="color: #fff;"></i> +91 96291 52781</p>
-                    <div class="social-media-section">
-                         <a href="#"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
-                         <a href="#"><i class="fa-brands fa-github" style="color: #fff;"></i></a>
-                         <a href="#"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a>
-                    </div>
-               </div>
-               <div class="form-section">
-                    <form action="#">
-                         <div class="input-section">
-                              <label for="username">USERNAME : </label>
-                              <input type="text" name="username" id="username" placeholder="ENTER THE USERNAME">
-                         </div>
+        </div>
+        <div class="project-section">
+          <h2>Technotes Application</h2>
+          <h4>A User of the owner can assign the role to work the task</h4>
+          <h4>Technologies Used:</h4>
+          <h4>
+            React JS, MongoDB, Express JS, Node JS, TailwindCSS, RTK Query
+          </h4>
 
-                         <div class="input-section">
-                              <label for="email">EMAIL : </label>
-                              <input type="email" name="email" id="email" placeholder="ENTER THE EMAIL">
-                         </div>
-
-                         <div class="input-section">
-                              <label for="feedback">FEEDBACK :
-                              </label>
-                              <textarea name="feedback" placeholder="ENTER YOUR FEEDBACK" id="feedback" rows="5"
-                                   cols="30"></textarea>
-                         </div>
-
-                         <input type="submit" value="SUBMIT">
-                    </form>
-                    <p id="form-message"></p>
-               </div>
+          <div class="button-section">
+            <button>
+              <a href="https://mern-technotes-application.onrender.com/"
+                >DEMO LINK</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/Pavalanganesan2368/MERN_TechNotes_Application.git"
+                >GITHUB LINK</a
+              >
+            </button>
           </div>
-     </main>
+        </div>
+      </div>
+    </main>
 
-     <footer class="footer-container">
-          <div class="copyright-section">
-               <p>&copy; Pavalan G <span id="date"></span>. All Rights Reserved.</p>
+    <main class="contact-container" id="contact">
+      <div class="form-header">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="contact-section">
+        <div class="contact-details">
+          <p>
+            <i class="fa-solid fa-envelope" style="color: #fff"></i>
+            pavalanganesan2368@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-phone" style="color: #fff"></i> +91 96291
+            52781
+          </p>
+          <div class="social-media-section">
+            <a href="https://linkedin.com/in/pavalanganesan"
+              ><i class="fa-brands fa-linkedin" style="color: #fff"></i
+            ></a>
+            <a href="https://github.com/pavalanganesan2368"
+              ><i class="fa-brands fa-github" style="color: #fff"></i
+            ></a>
           </div>
-     </footer>
+        </div>
+        <div class="form-section">
+          <form action="#">
+            <div class="input-section">
+              <label for="username">USERNAME : </label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="ENTER THE USERNAME"
+              />
+            </div>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
-          referrerpolicy="no-referrer"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
-          integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="./script.js"></script>
-</body>
+            <div class="input-section">
+              <label for="email">EMAIL : </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ENTER THE EMAIL"
+              />
+            </div>
 
+            <div class="input-section">
+              <label for="feedback">FEEDBACK : </label>
+              <textarea
+                name="feedback"
+                placeholder="ENTER YOUR FEEDBACK"
+                id="feedback"
+                rows="5"
+                cols="30"
+              ></textarea>
+            </div>
+
+            <input type="submit" value="SUBMIT" />
+          </form>
+          <p id="form-message"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <div class="copyright-section">
+        <p>&copy; Pavalan G <span id="date"></span>. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ── Contact Form Email Service ───────────────────────────────── -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./contact/emailjs-contact.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- ── Portfolio AI Chatbot ────────────────────────────────────────── -->
+    <script src="./chatbot/portfolio-data.js"></script>
+    <script src="./chatbot/ai-service.js"></script>
+    <script src="./chatbot/chatbot.js"></script>
+  </body>
 </html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+        padding: 30px 15px;
+      "
+    >
+      <div
+        style="
+          max-width: 650px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          border-radius: 12px;
+          overflow: hidden;
+          border: 1px solid #e5e7eb;
+        "
+      >
+        <!-- Header -->
+        <div style="background-color: #111827; padding: 25px; color: #ffffff">
+          <h1 style="margin: 0; font-size: 24px">New Portfolio Feedback</h1>
+
+          <p style="margin: 8px 0 0; color: #d1d5db; font-size: 14px">
+            Someone submitted feedback through your portfolio.
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div style="padding: 30px">
+          <h2 style="margin-top: 0; color: #111827; font-size: 18px">
+            Visitor Details
+          </h2>
+
+          <div
+            style="
+              background-color: #f9fafb;
+              border-radius: 8px;
+              padding: 18px;
+              margin-bottom: 25px;
+            "
+          >
+            <p style="margin: 8px 0">
+              <strong>Name:</strong>
+              {{from_name}}
+            </p>
+
+            <p style="margin: 8px 0">
+              <strong>Email:</strong>
+              {{from_email}}
+            </p>
+          </div>
+
+          <h2 style="color: #111827; font-size: 18px">Feedback</h2>
+
+          <div
+            style="
+              background-color: #f3f4f6;
+              border-left: 4px solid #2563eb;
+              padding: 18px;
+              border-radius: 6px;
+              color: #374151;
+              line-height: 1.6;
+            "
+          >
+            {{message}}
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+          style="
+            background-color: #f9fafb;
+            padding: 18px 30px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+          "
+        >
+          <p style="margin: 0; color: #6b7280; font-size: 13px">
+            This message was sent from your portfolio contact form.
+          </p>
+
+          <p style="margin: 6px 0 0; color: #9ca3af; font-size: 12px">
+            © Pavalan Ganesan
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- ── Contact Form Email Service ───────────────────────────────── -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./contact/emailjs-contact.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- ── Portfolio AI Chatbot ────────────────────────────────────────── -->
+    <script src="./chatbot/portfolio-data.js"></script>
+    <script src="./chatbot/ai-service.js"></script>
+    <script src="./chatbot/chatbot.js"></script>
+  </body>
+</html>
